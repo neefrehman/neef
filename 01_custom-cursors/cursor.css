@@ -1,0 +1,22 @@
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    z-index: 1;
+    top: -26px;
+    left: -26px;
+    transform: translate(-26px, -26px);
+    transition: transform 100ms;
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;
+    background-color: #5186b5;
+    opacity: 0.7;
+
+    background-image: url("./fish-cursor.png");
+}
+
+@media (ponter: coarse) {
+    .cursor {
+        display: none;
+    }   
+}
