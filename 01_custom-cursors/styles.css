@@ -4,7 +4,7 @@ body {
     margin: 0;
     max-height: 100vh;
 
-    cursor: url("./fish-cursor_up.png") 24 0, auto;	
+    /* cursor: url("./fish-cursor_up.png") 24 0, auto;	 */
 }
 
 header {
@@ -79,10 +79,10 @@ main {
 
 .control.backward {
     left: 0;
-    cursor: url("./fish-cursor_left.png") 0 24, auto;	
+    /* cursor: url("./fish-cursor_left.png") 0 24, auto; */
 }
 
 .control.forward {
     right: 0;
-    cursor: url("./fish-cursor_right.png") 48 24, auto;	
+    /* cursor: url("./fish-cursor_right.png") 48 24, auto; */
 }

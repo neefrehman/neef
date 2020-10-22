@@ -13,11 +13,24 @@ if (matchMedia("(pointer:fine)").matches) {
 
     document.addEventListener("mousemove", (e) => {
         cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-        // cursor.classList.add("show");
     });
 
     allLinks.forEach((link) => {
         link.addEventListener("mouseenter", () => cursor.classList.add("large"));
         link.addEventListener("mouseleave", () => cursor.classList.remove("large"));
     });
+
+    forwardButton.addEventListener("mouseenter", () =>
+        cursor.classList.add("right")
+    );
+    forwardButton.addEventListener("mouseleave", () =>
+        cursor.classList.remove("right")
+    );
+
+    backwardButton.addEventListener("mouseenter", () =>
+        cursor.classList.add("left")
+    );
+    backwardButton.addEventListener("mouseleave", () =>
+        cursor.classList.remove("left")
+    );
 }
