@@ -3,6 +3,7 @@ body {
     font-family: 'Grandstander', Arial, Helvetica, sans-serif;
     margin: 0;
     max-height: 100vh;
+    color: white;
 
     /* cursor: url("./fish-cursor_up.png") 24 0, auto;	 */
 }
@@ -24,8 +25,7 @@ nav a {
     font-size: 24px;
     margin-left: 40px;
     display: inline-block;
-
-    color: black;
+    color: white;
 }
 
 nav a:hover {

@@ -10,18 +10,21 @@
 
 .cursor img {
     position: fixed;
-    left: 26px;
-    transform-origin: left;
+    top: 26px;
+    transform-origin: top;
     transition: transform 500ms;
-    transform: rotate(90deg);
+}
+
+.cursor.up img {
+    transform: translateY(-10px);
 }
 
 .cursor.right img {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 
 .cursor.left img {
-    transform: rotate(0);
+    transform: rotate(-90deg);
 }
 
 @media (ponter: coarse) {

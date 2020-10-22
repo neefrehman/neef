@@ -16,8 +16,8 @@ if (matchMedia("(pointer:fine)").matches) {
     });
 
     allLinks.forEach((link) => {
-        link.addEventListener("mouseenter", () => cursor.classList.add("large"));
-        link.addEventListener("mouseleave", () => cursor.classList.remove("large"));
+        link.addEventListener("mouseenter", () => cursor.classList.add("up"));
+        link.addEventListener("mouseleave", () => cursor.classList.remove("up"));
     });
 
     forwardButton.addEventListener("mouseenter", () =>
