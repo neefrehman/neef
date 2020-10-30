@@ -1,10 +1,10 @@
-const carousel = document.querySelector(".carousel");
 const backwardButton = document.querySelector(".control.backward");
 const forwardButton = document.querySelector(".control.forward");
 
 
-// Image width + image border
-const imageWidth = carousel.querySelector("img").clientWidth + 5;
+// Carousel logic
+const carousel = document.querySelector(".carousel");
+const imageWidth = carousel.querySelector("img").clientWidth + 5; // Image width + image border
 
 forwardButton.addEventListener("click", () =>
     carousel.scrollBy({ left: imageWidth })
@@ -14,7 +14,7 @@ backwardButton.addEventListener("click", () =>
 );
 
 
-// JS cursor
+// JS cursor logic
 if (matchMedia("(pointer:fine)").matches) {
     const cursor = document.querySelector(".cursor");
     const allLinks = document.querySelectorAll("a");
