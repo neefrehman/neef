@@ -10,21 +10,28 @@
 
 .cursor img {
     position: fixed;
-    top: 26px;
-    transform-origin: top;
+    transform-origin: right;
     transition: transform 500ms;
 }
 
-.cursor.up img {
-    transform: translateY(-10px);
-}
-
 .cursor.right img {
-    transform: rotate(90deg) scaleX(-1);
+    transform: translateX(-40px);
 }
 
 .cursor.left img {
-    transform: rotate(-90deg);
+    transform: scaleX(-1) translateX(20px);
+}
+
+.cursor.forwards img {
+    transform: translateX(62px);
+}
+
+.cursor.backwards img {
+    transform: scaleX(-1) translateX(100px);
+}
+
+.cursor.up img {
+    transform: rotate(-90deg) translateX(-20px) translateY(-20px);
 }
 
 @media (ponter: coarse) {
