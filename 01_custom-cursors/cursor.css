@@ -1,3 +1,22 @@
+/* CSS cursor */
+body {
+    /* cursor: wait; */
+    /* cursor: url("./fish-cursor_up.png") 24 0, auto;	 */
+}
+a.about {
+    /* cursor: help; */
+}
+.control.backward {
+    cursor: w-resize;
+    /* cursor: url("./fish-cursor_left.png") 0 24, auto; */
+}
+.control.forward {
+    cursor: e-resize;
+    /* cursor: url("./fish-cursor_right.png") 48 24, auto; */
+}
+
+
+/* JS cursor */
 .cursor {
     pointer-events: none;
     position: fixed;
