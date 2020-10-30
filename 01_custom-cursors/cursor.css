@@ -20,7 +20,7 @@
 }
 
 .cursor.right img {
-    transform: rotate(90deg);
+    transform: rotate(90deg) scaleX(-1);
 }
 
 .cursor.left img {
