@@ -20,7 +20,7 @@ if (matchMedia("(pointer:fine)").matches) {
     const allLinks = document.querySelectorAll("a");
 
     // Use an array of the mouse's previous X position so that we can get an average
-    let previousMouseXArray = Array(30).fill(0);
+    let previousMouseXArray = Array(40).fill(0);
 
     // A helper function to get the mean average from an array
     const getAverage = (array) =>

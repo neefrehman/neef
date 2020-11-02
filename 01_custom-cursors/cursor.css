@@ -24,7 +24,7 @@ a.about {
     top: -26px;
     left: -26px;
     transform: translate(-26px, -26px);
-    transition: transform 100ms;
+    transition: transform 200ms ease-out;
 }
 
 .cursor img {
