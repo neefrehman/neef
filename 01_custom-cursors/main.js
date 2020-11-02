@@ -22,16 +22,16 @@ if (matchMedia("(pointer:fine)").matches) {
     // Use an array of the mouse's previous X position so that we can get an average
     let previousMouseXArray = Array(30).fill(0);
 
-    // Get the average from our array of positions
-    const getAverageMouseX = () =>
-        previousMouseXArray.reduce((acc, cur) => acc + cur) / array.length;
+    // A helper function to get the mean average from an array
+    const getAverage = (array) =>
+        array.reduce((acc, cur) => acc + cur) / array.length;
 
     document.addEventListener("mousemove", (e) => {
         cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
 
-        // Using an average helps make the transition smoother, as the fish
+        // Using the average helps make the transition smoother, as the fish
         // wont change state if the mouse only moves a few pixels
-        if (e.clientX > getAverageMouseX()) {
+        if (e.clientX > getAverage(previousMouseXArray)) {
             cursor.classList.remove("left");
             cursor.classList.add("right");
         } else {
@@ -39,9 +39,9 @@ if (matchMedia("(pointer:fine)").matches) {
             cursor.classList.add("left");
         }
 
-        // Here we remove the first item in out array
+        // Here we remove the first item in our array
         previousMouseXArray.shift();
-        // and then add our current position to the end of the array for next time this event fires
+        // and then add our current position to the end of the array, for the next time the event fires
         previousMouseXArray = previousMouseXArray.concat(e.clientX);
     });
 
